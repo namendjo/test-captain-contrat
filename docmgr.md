@@ -138,9 +138,9 @@ S'il s'agit d'une personne morale, il s'agira d'afficher les infos suivantes:
 
 
 ```pseudo
-{% if type_prestataire_MC == 'PP' %}
+{% if type_prestataire_MC == 'PP' %} // si le prestataire est une personne physique
 
-    {% if sexe_prestataire_MC == 'masculin' %}
+    {% if sexe_prestataire_MC == 'masculin' %} // choix de la formule de politesse
         Monsieur
     {% else %}
         Madame
@@ -155,10 +155,12 @@ S'il s'agit d'une personne morale, il s'agira d'afficher les infos suivantes:
     demeurant
     {{adresse_domicile_prestataire_TX}}
 
-{% else %}
+{% else %} // si le prestataire est une personne morale
 
     La société
     {{denomination_sociale_prestataire_TX}},
+
+    // récupération de la forme juridique
 
     {% if forme_juridique_prestataire_MC == 'SAS' %}
         Société par actions simplifiée 
@@ -187,6 +189,8 @@ S'il s'agit d'une personne morale, il s'agira d'afficher les infos suivantes:
     dirigeant de la société.
 
     Sont associés à la création :
+    
+    // listing des attributs de chaque associé dans le tableau de stakeholders
 
     {% for associe in stakeholders %}
         {{associe.nom_stakeholder_TX}}, 
