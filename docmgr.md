@@ -11,7 +11,7 @@
 ```
 #### Ne sélectionner que les formes juridiques anonymes
 ```pseudo
-/^SAS|SASU/g
+/^SAS|SARL/g
 ```
 #### Ecrire une regex pour détecter l’Alsace-Moselle dans une adresse
 Considérant ce texte:
