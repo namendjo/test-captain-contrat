@@ -30,7 +30,7 @@ Considérant ce texte:
 
 ## 2. Configuration
 
-L'objectif est de rendre l'offre détaillée dans l'énoncée modulable et compétitive en proposant une composante optionnelle facturée 40 euros au client.
+L'objectif est de rendre l'offre détaillée dans l'énoncé modulable et compétitive en proposant une composante optionnelle facturée 40 euros au client.
 
 Le prix total de l'offre de création de SAS actuel semble ne pas correspondre à la somme du prix de l'offre et des prix de ses composants.
 De deux choses l'une:
@@ -187,7 +187,7 @@ S'il s'agit d'une personne morale, il s'agira d'afficher les infos suivantes:
     dirigeant de la société.
 
     Sont associés à la création :
-    
+
     {% for associe in stakeholders %}
         {{associe.nom_stakeholder_TX}}, 
         {{associe.prenom_stakeholder_TX}} 
