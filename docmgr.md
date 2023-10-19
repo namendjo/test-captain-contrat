@@ -72,7 +72,7 @@ La solution que l'on propose est de créer un nouveau composant optionnel *véri
 **1. offre basique**
 - prix : 0
 - type : regular
-- todos : rédaction des statuts, upload du certificat de dépôt des fonds, relecture des statuts, rédaction de l’annonce légale, publication de l’annonce légale
+- todos : rédaction des statuts, upload du certificat de dépôt des fonds, relecture des statuts, rédaction de l’annonce légale
 
 **2. publication annonce légale**
 - prix: 150 
